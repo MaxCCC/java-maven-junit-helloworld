@@ -32,7 +32,7 @@ public class HelloTest {
         assertThat(os.toString(), is(equalTo(String.format("%s%s", Hello.HELLO, System.lineSeparator()))));
     }
 
-    @Test
+    /*@Test
     public void testSayHelloAFewTimes() {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
@@ -56,5 +56,5 @@ public class HelloTest {
     public void testIllegalArgumentForHelloNegative() {
         Hello hi = new Hello();
         assertThrows(IllegalArgumentException.class, () -> hi.setTimes(-1));
-    }
+    }*/
 }

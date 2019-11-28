@@ -18,7 +18,7 @@ public class HelloApp {
      */
     public static void main(String[] args) {
 
-        int times = DEFAULT_TIMES;
+        /*int times = DEFAULT_TIMES;
         if (args.length >= 1) {
             try {
                 times = Integer.valueOf(args[0]);
@@ -27,15 +27,9 @@ public class HelloApp {
                         "Parameter was: [" + args[0] + "]");
                 System.exit(EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD);
             }
-        }
+        }*/
 
         Hello hi = new Hello();
-        try {
-            hi.setTimes(times);
-        } catch (IllegalArgumentException e) {
-            System.err.println("Something went wrong: " + e.getMessage());
-            System.exit(EXIT_STATUS_HELLO_FAILED);
-        }
         hi.sayHello(System.out);
     }
 

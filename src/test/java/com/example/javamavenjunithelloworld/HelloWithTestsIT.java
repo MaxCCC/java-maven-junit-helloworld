@@ -41,7 +41,7 @@ public class HelloWithTestsIT {
         assertThat(out.toString(), is(String.format("%s%s", Hello.HELLO, System.lineSeparator())));
     }
 
-    @Test
+    /*@Test
     public void doesItSayHelloTest3() {
         String[] args = {"3"};
         HelloApp.main(args);
@@ -51,5 +51,5 @@ public class HelloWithTestsIT {
         // Hello
         String thrice = String.format("%1$s%2$s%1$s%2$s%1$s%2$s", Hello.HELLO, System.lineSeparator());
         assertThat(out.toString(), is(thrice));
-    }
+    }*/
 }
