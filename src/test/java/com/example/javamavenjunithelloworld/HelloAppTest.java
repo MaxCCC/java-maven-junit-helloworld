@@ -28,7 +28,7 @@ public class HelloAppTest {
         System.setSecurityManager(new TestingSecurityManager());
     }
 
-    @AfterAll
+    /*@AfterAll
     public static void tearDown() {
         // Reinsert the original SecurityManager now that we are done with these tests.
         System.setSecurityManager(originalSecurityManager);
@@ -38,7 +38,7 @@ public class HelloAppTest {
     public void testMain() {
         String[] args = {"1"};
         HelloApp.main(args);
-    }
+    }*/
 
     /*@Test
     public void testBogusArgument() {
